@@ -1,0 +1,46 @@
+{
+  "name": "email-url-export",
+  "description": "tool to extract urls from emails",
+  "version": "0.1.0",
+  "homepage": "https://github.com/samdmarshall/email-url-export",
+  "author": {
+    "name": "Samantha Marshall",
+    "email": "me@samdmarshall.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samdmarshall/email-url-export.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samdmarshall/email-url-export/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD-3",
+      "url": "https://github.com/samdmarshall/email-url-export/blob/master/LICENSE-BSD-3"
+    }
+  ],
+  "main": "lib/email-url-export",
+  "engines": {
+    "node": "6.11.2"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "keywords": [],
+  "dependencies": {
+    "cli": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "mailparser": "^2.0.5",
+    "string-url-extractor": "^1.0.1",
+    "unfluff": "^1.1.0"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "email-url-export": "lib/email-url-export.js"
+  }
+}
