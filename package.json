@@ -22,7 +22,7 @@
   ],
   "main": "lib/email-url-export",
   "engines": {
-    "node": "6.11.4"
+    "node": ">=6.11.4"
   },
   "scripts": {},
   "devDependencies": {
