@@ -9,6 +9,5 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      - run: grunt
       - run: yarn danger
 
