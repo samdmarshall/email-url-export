@@ -1,9 +1,7 @@
-'use strict';
-
 const {danger, warn} = require('danger')
-const {checkForRelease} = require('danger-plugin-yarn')
-const {eslint} = require('danger-plugin-eslint')
-const {fixme} = require('danger-plugin-fixme')
+import yarn from 'danger-plugin-yarn'
+import eslint from 'danger-plugin-eslint'
+import fixme from 'danger-plugin-fixme'
 
 // No PR is too small to include a description of why you made a change
 if (danger.github.pr.body.length < 10) {
@@ -11,6 +9,8 @@ if (danger.github.pr.body.length < 10) {
 }
 
 
-//schedule(checkForRelease())
-//eslint()
-//fixme()
+schedule(yarn())
+
+eslint()
+
+fixme()
